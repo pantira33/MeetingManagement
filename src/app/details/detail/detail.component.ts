@@ -6,13 +6,14 @@ import {MatDialog, MatDialogConfig} from "@angular/material/dialog";
 import { DetailListComponent } from '../detail-list/detail-list.component';
 
 
+
 @Component({
   selector: 'app-detail',
   templateUrl: './detail.component.html',
   styles: []
 })
 export class DetailComponent implements OnInit {
-  
+
   
   public get service(): DetailService {
     return this._service;
@@ -24,9 +25,11 @@ export class DetailComponent implements OnInit {
   constructor(private dialog: MatDialog,
    private _service: DetailService ,
    private toastr:ToastrService,
+   
   
    ){}
   
+
   ngOnInit(){
     this.resetForm();
   }
@@ -48,7 +51,7 @@ AddEditDetailList(DetailIndex,DetailId){
   const dialogConfig = new MatDialogConfig();
   dialogConfig.autoFocus = true;
   dialogConfig.disableClose = true;
-  dialogConfig.width="50%";
+  dialogConfig.width="70%";
   dialogConfig.data={DetailIndex,DetailId}
   this.dialog.open(DetailListComponent,dialogConfig)
 }

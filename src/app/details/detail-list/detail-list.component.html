@@ -7,45 +7,30 @@
     </div>
 </div>
     <table class="table table-hover">
-            <thead>
+           
             <tr *ngFor="let d of service.list">
                 <td>
                     <label>Title : {{d.Title}}</label>
                 </td>
-            </tr>
-            <tr *ngFor="let d of service.list">
                 <td>
                     <label>MeetingNo : {{d.MeetingNo}}</label>
                 </td>
-           </tr>
-           <tr *ngFor="let d of service.list">
-               <td>
+                <td>
                     <label>Location : {{d.Location}}</label>
-               </td>
-            </tr>
-           <tr *ngFor="let d of service.list">
-               <td>
-                <label>Date : {{d.DMY}}</label>
+                </td>
+                <td>
+                    <label>Date : {{d.DMY}}</label>
+                </td>
+                <td>
+                    <label>Detail : {{d.Details}}</label>
+                    <div class="col-auto"> 
+                        <button type="button" class="btn btn-outline-primary"(click)="edit(d)">Edit <i class="far fa-edit"></i></button>
+                        <button type="button" class="btn btn-outline-primary"(click)="onDelete(d.DetailId)"> Delete  <i class="far fa-trash-alt"></i></button>
+                    </div>
                 </td>
             </tr>
-           <tr *ngFor="let d of service.list">
-               <td>
-                <label>Detail : {{d.Details}}</label>
-               </td>
-           </tr>
-     </thead>
     </table>
-   
-    <td *ngFor="let d of service.list">
-    <div class="row">
-        <div class="col-md-5 ml-md-auto">
-            <button type="button" class="btn btn-outline-primary"(click)="edit(d)">Edit <i class="far fa-edit"></i></button>
-        </div>
-        <div class="col-md-6 ml-md-auto">
-            <button type="button" class="btn btn-outline-primary"(click)="onDelete(d.DetailId)"> Delete  <i class="far fa-trash-alt"></i></button>
-         </div>
-    </div>
-    </td>
+
 
     
     
