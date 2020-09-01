@@ -19,6 +19,19 @@ import { UserService } from './shared/user.service';
 import { LoginsComponent } from './user/logins/logins.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
+import { TreeViewModule } from '@syncfusion/ej2-angular-navigations';
+import { DropDownListAllModule, MultiSelectAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { MaskedTextBoxModule, UploaderAllModule } from '@syncfusion/ej2-angular-inputs';
+import { ToolbarAllModule, ContextMenuAllModule } from '@syncfusion/ej2-angular-navigations';
+import { ButtonAllModule } from '@syncfusion/ej2-angular-buttons';
+import { CheckBoxAllModule } from '@syncfusion/ej2-angular-buttons';
+import { DatePickerAllModule, TimePickerAllModule, DateTimePickerAllModule } from '@syncfusion/ej2-angular-calendars';
+import { NumericTextBoxAllModule, TextBoxAllModule } from '@syncfusion/ej2-angular-inputs';
+import { ScheduleAllModule, RecurrenceEditorAllModule } from '@syncfusion/ej2-angular-schedule';
+import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
+
 
 
 
@@ -52,7 +65,27 @@ import { HomeComponent } from './home/home.component';
     ToastrModule.forRoot(),
     BsDatepickerModule.forRoot(),
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule,
+    ScheduleAllModule,
+    RecurrenceEditorAllModule,
+    NumericTextBoxAllModule,
+    TextBoxAllModule,
+    DatePickerAllModule,
+    TimePickerAllModule,
+    DateTimePickerAllModule,
+    CheckBoxAllModule,
+    ToolbarAllModule,
+    DropDownListAllModule,
+    ContextMenuAllModule,
+    MaskedTextBoxModule,
+    UploaderAllModule,
+    MultiSelectAllModule,
+    TreeViewModule, 
+    ButtonAllModule, 
+    BrowserModule,
+    HttpModule
+    
    
   
     
