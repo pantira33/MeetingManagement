@@ -5,7 +5,7 @@ import { UserComponent } from './user/user.component';
 import { RegistrationComponent } from './user/registration/registration.component';
 import { LoginsComponent } from './user/logins/logins.component';
 import { DetailsComponent } from './details/details.component';
-
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes=[
   {path:'',redirectTo:'/user/logins',pathMatch:'full'},
@@ -15,7 +15,8 @@ children:[
   {path:'logins',component:LoginsComponent}
 ]
 },
-{path:'details',component:DetailsComponent}
+{path:'details',component:DetailsComponent},
+{path:'home',component:HomeComponent}
  
 ];
 
